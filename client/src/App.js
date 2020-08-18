@@ -32,20 +32,20 @@ const App = (props) => {
   return (
     <div>
       <SavedList list={[ /* This is stretch */]} />
-      <Link to='movies'>Movie List</Link>
+      
     <div>
       
 
+    <Switch>
      <Route path='/movies/:id'>
-      <Movie />
+      <Movie props={movieList}/>
      </Route>
 
-
-     <Route  path='/movies'>
+     <Route  path='/'>
       <MovieList movies={movieList}/>
      </Route>
 
-      
+     </Switch>
     </div>
     </div>
   );

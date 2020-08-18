@@ -5,7 +5,9 @@ import { useHistory } from 'react-router-dom'
 
 
 
-const SavedList = props => (
+const SavedList = props => 
+
+(
   
   <div className="saved-list">
     <h3>Saved Movies:</h3>
